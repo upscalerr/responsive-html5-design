@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.js"></script>
+
+	<script>
+		var showWidth = 1;
+		if (showWidth == 1) {
+			$(function () {
+				$(window).resize(function () {
+					var width = $(window).width();
+					document.getElementById('output_width').innerHTML = "Window Width " + width.toString() + "px";
+				});
+			});
+		}
+	</script>
+
+</head>
+
+<body>
+
+	<div id="output_width"></div>
+
+	<div class="container">
+
+		<header class="main-header">
+			<img src="images/logo.png" alt="Responsive Project" id="logo">
+			<nav class="main-nav">
+				<ul>
+					<li><a class="active" href="#">Home</a></li>
+					<li><a href="#">Learn</a></li>
+					<li><a href="#">Brainstrom</a></li>
+					<li><a href="#">Create</a></li>
+					<li><a href="#">Collaborate</a></li>
+					<li><a href="#">Tech</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div class="main">
+			<div class="content">
+				<article class="art1">
+					<header class="art-header">
+						<h2 class="title"><a href="">First Post</a></h2>
+						<span> Created By : Alexandru Dumitru on October 7, 2015</span>
+					</header>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, quas officiis placeat illo quis eaque nihil, veritatis sunt fugiat adipisci vel ea labore ab? Harum at veritatis ipsum quas distinctio.</p>
+					<a href="" class="readmore">Read more...</a>
+				</article>
+
+				<article class="art2">
+					<header class="art-header">
+						<h2 class="title"><a href="">First Post</a></h2>
+						<span> Created By : Alexandru Dumitru on October 7, 2015</span>
+					</header>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto non ipsam alias beatae cupiditate nisi amet cum, corrupti fuga in saepe, unde, aliquam sunt omnis deserunt sed qui rerum veritatis.</p>
+					<a href="" class="readmore">Read more...</a>
+				</article>
+
+			</div>
+			<!--content-->
+			<aside id="sidebar">
+				<div class="block">
+					<h2>Top Sidebar</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam incidunt debitis nostrum quas, corporis .</p>
+				</div>
+				<div class="block">
+					<h2>Mid Sidebar</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam incidunt debitis nostrum quas, corporis .</p>
+				</div>
+				<div class="block">
+					<h2>Bottom Sidebar</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam incidunt debitis nostrum quas, corporis .</p>
+				</div>
+
+			</aside>
+		</div>
+		<!--main-->
+		<div class="clr"></div>
+		<footer>
+
+			<p>Copyright &copy; 2015 zeebo </p>
+		</footer>
+
+
+	</div>
+
+
+
+</body>
+
+</html>
